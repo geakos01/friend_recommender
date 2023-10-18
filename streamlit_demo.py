@@ -30,7 +30,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import plotly.graph_objs as go
 from plotly.offline import plot
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
+
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 used_params = {
@@ -221,6 +222,26 @@ def plot_roc_curve(predictions_df):
     plt.legend(loc='lower right')
     plt.show()
 
+def calculate_recall(df):
+    return recall_score(df['edge'], df['pred_edge'])
+
+def calculate_precision(df):
+    return precision_score(df['edge'], df['pred_edge'])
+
+def calculate_f1(df):
+    return f1_score(df['edge'], df['pred_edge'])
+
+def calculate_accuracy(df):
+    return accuracy_score(df['edge'], df['pred_edge'])
+
+def calculate_metrics(df):
+    recall = calculate_recall(df)
+    precision = calculate_precision(df)
+    f1 = calculate_f1(df)
+    accuracy = calculate_accuracy(df)
+
+    return recall, precision, f1, accuracy
+
 def plot_histogram(df):
     plt.figure(figsize=(10, 6))  # Set the figure size
     plt.hist(df.prob, bins=30, color='skyblue', edgecolor='black', alpha=0.7)  # Customize histogram appearance
@@ -332,6 +353,12 @@ if uploaded_file is not None:
     except KeyError:
         st.write("This Node ID doesn't exist")
 
+    recall, precision, f1, accuracy = calculate_metrics(predictions)
+
+    st.write(f"Recall: {recall}")
+    st.write(f"Precision: {precision}")
+    st.write(f"F1: {f1}")
+    st.write(f"Accuracy: {accuracy}")
 
     create_plots(predictions)
 
