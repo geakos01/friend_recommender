@@ -363,6 +363,6 @@ if uploaded_file is not None:
     create_plots(predictions)
 
 
-        # Display the other plots and charts here
+    # Display the other plots and charts here
 
 # TODO: Mapping Elvégzése
