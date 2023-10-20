@@ -40,12 +40,12 @@ This file contains the functions that are used in the notebooks and the streamli
 
 # Modeling Steps
 
-1. Create random walks from the graph
-2. Create an embedding matrix from the random walks with Word2Vec
-3. Make training and test data from the embedding matrix using EdgeSplitter
-4. Process edges using some operator, that takes the embeddings of the two nodes
-5. Train a Logistic Regression model on the processed edges
-6. Evaluate the model on the test data
+1. Create random walks from the graph.
+2. Create an embedding matrix from the random walks with Word2Vec.
+3. Make training and test data from the embedding matrix using EdgeSplitter.
+4. Process edges using some operator, that takes the embeddings of the two nodes.
+5. Train a Logistic Regression model on the processed edges.
+6. Evaluate the model on the test data.
 
 # Related Works
 
