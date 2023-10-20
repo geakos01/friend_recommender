@@ -10,7 +10,7 @@
 The goal of this project is to develop a personalized friend recommendation system by using Graph Neural Networks (GNNs).
 
 We aim to provide a friend recommendation service based on deep learning, more specifically: using Graph Neural Networks.
-We will use the [Facebook Social Circles](https://snap.stanford.edu/data/ego-Facebook.html) dataset, which contains ego networks of Facebook users. The dataset consists of 10 different ego networks, each of them containing the friends of a single user. The dataset also contains the ground truth of the friendship between the users, which we will use to train our model.
+We will use the [Facebook Social Circles](https://snap.stanford.edu/data/ego-Facebook.html) dataset, which contains ego networks of Facebook users. The dataset consists of 10 different ego networks, each of them containing the friends of a single user.
 We will implement the node2vec paper(https://arxiv.org/abs/1607.00653), which is a graph embedding algorithm.
 
 
