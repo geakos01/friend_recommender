@@ -1,3 +1,0 @@
-node2vec:
-https://www.youtube.com/watch?v=pS_POUVFXvk&ab_channel=PhilippBrunenberg
-https://www.youtube.com/watch?v=LpwGZG5j_q0&ab_channel=TechViz-TheDataScienceGuy
