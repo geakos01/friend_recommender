@@ -337,7 +337,7 @@ def plot_confusion_matrix(df, threshold=0.5):
 def plot_roc_curve(predictions_df):
     # Extract the 'Real', 'Pred', and 'Prob' columns
     ground_truth_values = predictions_df['edge'].tolist()
-    predictions = predictions_df['pred_edge'].tolist()
+    predictions = predictions_df['prob'].tolist()
 
     # Calculate the ROC curve
     fpr, tpr, _ = roc_curve(ground_truth_values, predictions)
