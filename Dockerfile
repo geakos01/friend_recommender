@@ -4,6 +4,7 @@ WORKDIR /workspace
 
 COPY requirements.txt .
 COPY streamlit_demo.py .
+COPY common_functions.py .
 
 RUN pip install --upgrade pip
 RUN pip install streamlit
