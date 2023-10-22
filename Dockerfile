@@ -9,5 +9,5 @@ COPY common_functions.py .
 RUN pip install --upgrade pip
 RUN pip install streamlit
 RUN pip install -r /workspace/requirements.txt
-EXPOSE 7860
+EXPOSE 8501
 ENTRYPOINT ["streamlit", "run", "streamlit_demo.py", "--server.port=8501", "--server.address=0.0.0.0"]
