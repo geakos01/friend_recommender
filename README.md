@@ -52,4 +52,9 @@ This file contains the functions that are used in the notebooks and the streamli
 - https://arxiv.org/abs/1607.00653
 - https://stellargraph.readthedocs.io/en/stable/demos/link-prediction/node2vec-link-prediction.html?fbclid=IwAR03VK37YJmiShqtjREBPMM0BAxbkjgRuOGZde8Rou12yVM_wJxQWKl3OLk
 
-# How To Run?
+# How to Run?
+
+You can build the application yourself and run it using a docker container by navigating to the source directory and running: `docker build -t <image_name>:<tag> .`. This will automatically build the image for you. After successful image creation, you may create
+a container: `docker run -p <port_to_forward_to>:7860 <image_name>:<tag>`.
+
+All done! You may access the streamlit application by navigating to `http://localhost:<port_to_forward_to>` in your browser of choice.
