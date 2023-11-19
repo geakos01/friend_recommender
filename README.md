@@ -47,6 +47,24 @@ This file contains the functions that are used in the notebooks and the streamli
 5. Train a Logistic Regression model on the processed edges.
 6. Evaluate the model on the test data.
 
+# Running the pipeline
+
+There are two main ways to run the developed model.
+
+1. Automatically via the streamlit user interface.
+  - This way you receive all important metrics like accuracy and precision score.
+2. Manually via the ModelDev.ipynb notebook.
+  - Here each step is divided into its own cell.
+  - You may create the dataset from the facebook dataset provided.
+  - The next cells deal with splitting the dataset into evaluation, test and train.
+  - After that the following steps occur: Embedding creation from the train graph and distance operator creation.
+  - The next step deals with evaluating which operator yielded the best results with the same training set.
+  - Then the best operator is tested using the specifically designated test graph.
+  - The model's AUC score is returned as the result of the test function.
+  - The last cell is meant to visualize the effectiveness of the embedding by reducing the dimensionality of the
+feature vectors via PCA.
+  - The 2 dimensional vectors are displayed on a scatterplot.
+
 # Related Works
 
 - https://arxiv.org/abs/1607.00653
