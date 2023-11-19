@@ -41,7 +41,6 @@ def node2vec_embedding(graph, name):
         workers=USED_PARAMS['workers'],
         epochs=USED_PARAMS['num_iter'],
     )
-
     def get_embedding(u):
         return model.wv[u]
 
