@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c1c920-6467-4ec0-bd3d-4978d16e6ee5" name="Changes" comment="Added Baseline">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04_BaseLine.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04_BaseLine.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
