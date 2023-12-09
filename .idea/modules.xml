@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/Projects/StatHF/.idea/StatHF.iml" filepath="D:/Projects/StatHF/.idea/StatHF.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/friend_recommender.iml" filepath="$PROJECT_DIR$/.idea/friend_recommender.iml" />
     </modules>
   </component>
